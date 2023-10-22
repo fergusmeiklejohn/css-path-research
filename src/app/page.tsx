@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -42,6 +42,24 @@ function CSSPathResearch() {
           <div className={`w-full h-full ${card.color} ${card.class} cursor-pointer`}></div>
         </div>
       ))}
+      <div className="aspect-[16/4] bg-gray-800 rounded-lg flex flex-col items-center justify-center">
+        <h2 className="text-xl font-bold m-2 mx-auto text-center">
+          <a href="https://gsap.com/resources/SVG" target="_blank" rel="noopener noreferrer" className="text-center text-white hover:text-blue-400">{`Complex animations with GSAP
+          https://gsap.com/resources/SVG`}</a>
+        </h2>
+      </div>
+      <div className="aspect-[16/10] bg-gray-800 rounded-lg flex flex-col items-center justify-center">
+        <h2 className="text-xl font-bold m-2">Animating origin with GSAP</h2>
+        <div className={`w-full h-full`}>
+          <Image src="/origin-animation-gsap.gif" alt="examples of origin animation with GSAP" width={1200} height={679} />
+        </div>
+      </div>
+      <div className="aspect-[16/9] bg-gray-800 rounded-lg flex flex-col items-center justify-center">
+        <h2 className="text-xl font-bold m-2">Animating shapes with GSAP</h2>
+        <div className={`w-full h-full`}>
+          <Image src="/animating-shapes-gsap.gif" alt="examples of origin animation with GSAP" width={1200} height={493} />
+        </div>
+      </div>
     </div>
   )
 }
