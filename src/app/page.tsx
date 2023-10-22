@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
         </p>
       </div>
       <CSSPathResearch />
+
     </main>
   )
 }
@@ -25,8 +26,12 @@ function CSSPathResearch() {
       title: "CSS Clip Path with % values",
       color: "bg-red-400",
       class: "path2"
+    },
+    {
+      title: "CSS Clip Path with px & % values",
+      color: "bg-blue-400",
+      class: "path3"
     }
-    // add more cards here if needed
   ];
 
   return (
@@ -40,3 +45,5 @@ function CSSPathResearch() {
     </div>
   )
 }
+
+
